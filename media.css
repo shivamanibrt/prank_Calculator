@@ -1,0 +1,48 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row)*/
+@media only screen and (max-width: 1200px) {
+}
+/* Small tablet to big tablet : from 768 to 1023px*/
+@media only screen and (max-width: 1023px) {
+    .calculator {
+        width: 400px;
+    }
+    .calculator div {
+        height: 60px;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        top: -50px;
+        left: -170px;
+    }
+}
+/* Small phones to small tablets from: 418px to 768px*/
+@media only screen and (max-width: 767px) {
+    .calculator {
+        width: 300px;
+    }
+    .calculator div {
+        height: 40px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: -140px;
+    }
+}
+/* Small phones to small tablets from: 0 to  418px*/
+@media only screen and (max-width: 418px) {
+    .calculator {
+        width: 250px;
+    }
+    .calculator div {
+        height: 35px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        top: -40px;
+        left: -130px;
+    }
+}

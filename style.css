@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.wrapper {
+    background: linear-gradient(
+        rgba(255, 255, 187, 0.76),
+        rgba(0, 255, 106, 0.797)
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator {
+    background: rgba(225, 223, 223, 0.68);
+    width: 400px;
+    border-radius: 10px;
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+    grid-template-areas:
+        "display display display display"
+        "ac c prc divide"
+        "btn7 btn8 btn9 multiplier"
+        "btn4 btn5 btn6 minus"
+        "btn1 btn2 btn3 plus"
+        "btn0 btn0 dot equals";
+}
+.calculator div {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.901);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator div.display {
+    grid-area: display;
+    display: table-cell;
+    justify-content: flex-end;
+    padding: 1rem;
+    text-align: right;
+}
+.calculator div:hover {
+    background: #9e9c9caf;
+    transform: all 0.8s;
+}
+.calculator div.display:hover {
+    background: rgba(255, 255, 255, 0.901);
+}
+
+.display {
+    grid-area: display;
+}
+.btn-ac {
+    grid-area: ac;
+}
+.btn-c {
+    grid-area: c;
+}
+.btn-prc {
+    grid-area: prc;
+}
+.btn-divide {
+    grid-area: divide;
+}
+.btn-7 {
+    grid-area: btn7;
+}
+.btn-8 {
+    grid-area: btn8;
+}
+.btn-9 {
+    grid-area: btn9;
+}
+.btn-multiplier {
+    grid-area: multiplier;
+}
+.btn-4 {
+    grid-area: btn4;
+}
+.btn-5 {
+    grid-area: btn5;
+}
+.btn-6 {
+    grid-area: btn6;
+}
+.btn-minus {
+    grid-area: minus;
+}
+.btn-1 {
+    grid-area: btn1;
+}
+.btn-2 {
+    grid-area: btn2;
+}
+.btn-3 {
+    grid-area: btn3;
+}
+.btn-plus {
+    grid-area: plus;
+}
+.btn-0 {
+    grid-area: btn0;
+}
+.btn-dot {
+    grid-area: dot;
+}
+.btn-equals {
+    grid-area: equals;
+}
+.circle {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 255, 0.693),
+        rgba(128, 0, 128, 0.646)
+    );
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    left: -180px;
+}
+
+.prank {
+    animation: shake 0.5s ease-in;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
